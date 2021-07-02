@@ -1,17 +1,38 @@
 <!DOCTYPE html>
 <head>
-    <body>
+    <body style="background-image: url(recHhS.jpg);">
+
+        <h1 style="text-align: center; font-size: 300%; color: rgb(247, 244, 244);">Welcome to my practice sessions</h1>
+
+        <p style=" color: rgb(247, 246, 248); font-size: 200%;" >Enter your age for confirmation</p>
         
-        <p id = "one"></p>
+     <form style="width: 30px;" >
+        <p> Enter age <input id = "age" value = 18 /></p> 
+    </form>
+         
+        <button onclick="checker()">Check</button>
+        <p id="boyosh"></p>
+        
 
         <script>
+            function checker()
+            {
+                let situation;
+                let age = Number(document.getElementById("age").value);
+                if (isNaN(age))
+                {
+                    situation = "Input is invalid : Strings are not allowed";
+                      
+                }
+                else 
+                {
+                    situation = (age < 18)? "Underaged!! Cant apply":"Age confirmed";
+                }
+                document.getElementById("boyosh").innerHTML = situation ;
+            }
+
             
-            //document.getElementById(demo).innerHTML;
-            let str1 = "My";
-            let str2 = "Name";
-            let str3 = str1.concat(" ", str2);
-            document.getElementById("one").innerHTML = str3;
-            document.getElementById("one").innerHTML = 5+6;
+            
             </script>
 
 
