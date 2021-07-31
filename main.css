@@ -1,0 +1,40 @@
+.test{
+  background-color: black;
+  background-image: url(triangle.jpg);
+  font-size: 100%;
+  color: aliceblue;
+  text-align: center;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.container{
+  color: aliceblue;
+}
+.btn{
+  font-size: 150%;
+  border: 1px solid #3498db;
+  background: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin: 10px;
+  color: aliceblue;
+  transition: 0.8s;
+}
+
+.btn1,.btn2,.btn3,.btn4{
+  color: #3498db;
+}
+
+.btn1:hover, .btn2:hover, .btn3:hover, .btn4:hover{
+
+  color: #fff;
+}
+
+#pink{
+    
+    font-size: 100px;
+}
+#history{
+  padding: 10px 20px;
+  margin: 10px;
+  border: 1px solid #3498db;
+}
